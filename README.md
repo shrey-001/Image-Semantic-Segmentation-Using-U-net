@@ -1,6 +1,11 @@
 # Image-Semantic-Segmentation-Using-U-net
 This Project uses U-net architecture to build a model to output the segmentation map of the face given the input face image.</br>
 Our Model is getting **97.16 %** accuracy on training set and **92.08 %** on validation set.
+### About the data
+The Data contains 1999 train images and 100 test images. The labels of image contains different face components like eyebrows, lips, nose,left eye, right eye,etc.
+The face components are listed in label_names.txt.</br>
+
+Original Link to the dataset: https://drive.google.com/file/d/1jweX1u0vltv-tYZhYp6mlyDZDy0aDyrw/view
 ### Getting Started
 ####  System Requirements 
 * Numpy
@@ -12,8 +17,9 @@ Our Model is getting **97.16 %** accuracy on training set and **92.08 %** on val
 * Datetime
 * tqdm
 ####  How to Replicate
+Zip the train and test folder (from the dataset available in the link) to Unet.zip.</br> 
 Upload the Unet.zip file to colab session.</br>
-Unet.zip contains(train images,test images, model, logs)
+
 ```
 !unzip "/content/drive/MyDrive/U-net/u-net.zip" -d "/content/Data"
 ```
@@ -26,11 +32,7 @@ Run the Python script F1_score.py to get the F1_score.
 ```
 python f1_score.py
 ```
-### About the data
-The Data contains 1999 train images and 100 test images. The labels of image contains different face components like eyebrows, lips, nose,left eye, right eye,etc.
-The face components are listed in label_names.txt.</br>
 
-Original Link to the dataset: https://drive.google.com/file/d/1jweX1u0vltv-tYZhYp6mlyDZDy0aDyrw/view
 
 
 ### Preprocessing Data
@@ -48,15 +50,18 @@ For every Mask/labels we need to do:</br>
 ### Result/Analysis
 ![Alt text](https://github.com/shrey-001/Image-Semantic-Segmentation-Using-U-net/blob/main/accuracy?raw=true "Optional Title")
 ![Alt text](https://github.com/shrey-001/Image-Semantic-Segmentation-Using-U-net/blob/main/loss?raw=true "Optional Title")
+We get maximun validation accuracy at 33th epoch.</br>
 #### On 33th epoch: <br>
 Train Set Accuracy: 97.16%</br>
-Validation Set Accuracy: 92.08%</br>
-Test Set Accuracy: 90.34%</br>
+Validation Set Accuracy: 92.08%</br></br>
+
 Train Set loss: 0.0127</br>
-Validation Set loss:0.0523</br>
+Validation Set loss:0.0523</br></br>
+
+Test Set Accuracy: 90.34%</br>
 Test Set loss: 0.071</br>
 ![Alt text](https://github.com/shrey-001/Image-Semantic-Segmentation-Using-U-net/blob/main/f1_score.png?raw=true "Optional Title")
-*F1 score on test Dataset : **78.02***
+*F1 score on test Dataset : **78.017***
 ### References
 * U-Net: Convolutional Networks for Biomedical Image SegmentationOlaf Ronneberger, Philipp Fischer, and Thomas Brox
 * https://cs230.stanford.edu/blog/tensorflow/
