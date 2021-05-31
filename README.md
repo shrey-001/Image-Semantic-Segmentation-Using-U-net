@@ -1,6 +1,10 @@
 # Image-Semantic-Segmentation-Using-U-net
 This Project uses U-net architecture to build a model to output the segmentation map of the face given the input face image.</br>
-Our Model is getting **97.16 %** accuracy on training set and **92.08 %** on validation set.
+Our Model is getting **97.16 %** accuracy on training set and **92.08 %** on validation set.</br>
+Visualization of some test Result:</br>
+![Alt text](https://github.com/shrey-001/Image-Semantic-Segmentation-Using-U-net/blob/main/test_visualize/test1.png?raw=true "Optional Title")
+![Alt text](https://github.com/shrey-001/Image-Semantic-Segmentation-Using-U-net/blob/main/test_visualize/test2.png?raw=true "Optional Title")
+![Alt text](https://github.com/shrey-001/Image-Semantic-Segmentation-Using-U-net/blob/main/test_visualize/test3.png?raw=true "Optional Title")
 ### About the data
 The Data contains 1999 train images and 100 test images. The labels of image contains different face components like eyebrows, lips, nose,left eye, right eye,etc.
 The face components are listed in label_names.txt.</br>
