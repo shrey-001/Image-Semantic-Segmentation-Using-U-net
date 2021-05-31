@@ -55,6 +55,7 @@ Test Set Accuracy: 90.34%</br>
 Train Set loss: 0.0127</br>
 Validation Set loss:0.0523</br>
 Test Set loss: 0.071</br>
+![Alt text](https://github.com/shrey-001/Image-Semantic-Segmentation-Using-U-net/blob/main/f1_score.png?raw=true "Optional Title")
 *F1 score on test Dataset : **78.02***
 ### References
 * U-Net: Convolutional Networks for Biomedical Image SegmentationOlaf Ronneberger, Philipp Fischer, and Thomas Brox
